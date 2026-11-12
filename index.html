@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Lumen Odontología | Turnos online en Bahía Blanca</title>
+  <meta name="description" content="Implantes, estética y odontología general en Bahía Blanca. Sacá tu turno online las 24 hs. Primera evaluación sin cargo. Obras sociales y prepagas.">
+  <meta name="theme-color" content="#F6F1EA">
+  <meta property="og:title" content="Lumen Odontología | Turnos online en Bahía Blanca">
+  <meta property="og:description" content="Implantes, estética y odontología general con atención personalizada. Sacá tu turno online.">
+  <meta property="og:image" content="img/hero.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="img/hero.webp">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body class="has-demo-bar">
+
+  <!-- Íconos reutilizables -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-tooth" viewBox="12 10.5 44 45.5"><path d="M24.5 13C18.6 13 15 17.8 15 24c0 5 1.7 8.8 3 13.2 1.6 4.6 2.1 16.8 6.7 16.8 3.9 0 3.7-10.2 6.1-13.9 1-1.5 1.9-2.2 3.2-2.2s2.2.7 3.2 2.2c2.4 3.7 2.2 13.9 6.1 13.9 4.6 0 5.1-12.2 6.7-16.8 1.3-4.4 3-8.2 3-13.2 0-6.2-3.6-11-9.5-11-3.7 0-6.1 2-9.5 2s-5.8-2-9.5-2z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></g></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></g></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></g></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6" fill="currentColor"/></g></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9-4.4-4.1 6-.8z"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-back" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-next" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7.5 3v5.5c0 4.6-3.2 8.3-7.5 9.5-4.3-1.2-7.5-4.9-7.5-9.5V6z M8.8 12l2.2 2.2 4.3-4.4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-gift" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M8.5 12.5l2.3 2.3 4.7-5"/></g></symbol>
+  </svg>
+
+  <!-- Barra de proyecto demo -->
+  <div class="demo-bar" id="demoBar" role="note">
+    <span class="demo-bar-sp" aria-hidden="true"></span>
+    <span class="demo-bar-txt"><span class="largo">Proyecto demo hecho por </span><span class="corto">Demo por </span><a href="https://instagram.com/cono.agency" target="_blank" rel="noopener"><b>Cono</b><span class="largo"> · cono.agency</span></a></span>
+    <span class="demo-bar-acc">
+      <a class="demo-bar-btn" href="panel.html?demo">Ver panel del consultorio →</a>
+      <button class="demo-bar-close" id="demoBarClose" aria-label="Cerrar aviso"><svg><use href="#i-close"/></svg></button>
+    </span>
+  </div>
+
+  <!-- Navbar -->
+  <header class="nav" id="nav">
+    <div class="nav-inner container">
+      <a href="#inicio" class="logo" aria-label="Lumen Odontología, inicio">
+        <svg class="logo-mark"><use href="#i-tooth"/></svg>
+        <span class="logo-text"><b>LUMEN</b><small>ODONTOLOGÍA</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Principal">
+        <a href="#tratamientos">Tratamientos</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#consultorio">Consultorio</a>
+        <a href="#preguntas">Preguntas</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <button class="btn btn--sm nav-cta" data-turno>Sacar turno</button>
+      <button class="nav-burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- Menú celu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav class="mobile-menu-links" aria-label="Menú">
+      <a href="#tratamientos">Tratamientos</a>
+      <a href="#equipo">Equipo</a>
+      <a href="#consultorio">Consultorio</a>
+      <a href="#preguntas">Preguntas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="mobile-menu-foot">
+      <button class="btn btn--lg btn--block" data-turno><svg><use href="#i-cal"/></svg>Sacar turno online</button>
+      <a class="btn btn--lg btn--block btn--ghost" data-wa href="#"><svg><use href="#i-wa"/></svg>Escribinos por WhatsApp</a>
+      <p class="mobile-menu-addr"><span data-cfg="consultorio.direccion"></span> · <span data-cfg="consultorio.ciudad"></span></p>
+    </div>
+  </div>
+
+  <main>
+    <!-- 2. Inicio -->
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal">Odontología integral · Bahía Blanca</p>
+          <h1 class="hero-title reveal">Volvé a sonreír <em>con confianza.</em></h1>
+          <p class="hero-sub reveal">Implantes, estética y odontología general con atención personalizada y tecnología de última generación.</p>
+          <div class="hero-actions reveal">
+            <button class="btn btn--lg" data-turno><svg><use href="#i-cal"/></svg>Sacar turno online</button>
+            <a class="btn btn--lg btn--ghost" data-wa href="#"><svg><use href="#i-wa"/></svg>Escribinos por WhatsApp</a>
+          </div>
+          <ul class="hero-facts reveal">
+            <li><svg><use href="#i-clock"/></svg>Turnos online 24 hs</li>
+            <li><svg><use href="#i-gift"/></svg>Primera evaluación sin cargo</li>
+            <li><svg><use href="#i-shield"/></svg>Obras sociales y prepagas</li>
+          </ul>
+        </div>
+        <div class="hero-media reveal">
+          <div class="hero-photo">
+            <img src="img/hero.webp" alt="Consultorio luminoso con sillón dental y muebles de madera" width="1600" height="1067" fetchpriority="high">
+          </div>
+          <button class="hero-chip" data-turno data-trat="consulta" id="heroChip" hidden>
+            <span class="hero-chip-dot"></span>
+            <span><small>Próximo turno disponible</small><b id="heroChipText"></b></span>
+            <svg><use href="#i-arrow"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Soluciones -->
+    <section class="section" id="soluciones">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Soluciones según tu necesidad</p>
+          <h2>Contanos qué te pasa, <em>nosotros te acompañamos.</em></h2>
+        </div>
+        <div class="sol-grid" id="solGrid"></div>
+      </div>
+    </section>
+
+    <!-- 4. Tratamientos -->
+    <section class="section section--white" id="tratamientos">
+      <div class="container">
+        <div class="section-head section-head--row reveal">
+          <div>
+            <p class="eyebrow">Tratamientos</p>
+            <h2>Todo para tu sonrisa, <em>en un solo lugar.</em></h2>
+          </div>
+          <div class="filters" id="filters" role="group" aria-label="Filtrar por categoría"></div>
+        </div>
+        <div class="trat-grid" id="tratGrid"></div>
+      </div>
+    </section>
+
+    <!-- 5. Cómo sacar tu turno -->
+    <section class="section" id="como">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Cómo sacar tu turno</p>
+          <h2>En menos de un minuto, <em>desde el celu.</em></h2>
+        </div>
+        <ol class="steps">
+          <li class="step reveal"><span class="step-n">01</span><h3>Elegí el tratamiento</h3><p>O empezá por una consulta y lo vemos juntos.</p></li>
+          <li class="step reveal"><span class="step-n">02</span><h3>Elegí día y horario</h3><p>Ves solo los horarios que están libres de verdad.</p></li>
+          <li class="step reveal"><span class="step-n">03</span><h3>Dejá tus datos</h3><p>Nombre, WhatsApp y obra social. Nada más.</p></li>
+          <li class="step reveal"><span class="step-n">04</span><h3>Te confirmamos por WhatsApp</h3><p>Y 24 hs antes te mandamos un recordatorio.</p></li>
+        </ol>
+        <div class="steps-cta reveal"><button class="btn btn--lg" data-turno>Sacar turno ahora<svg><use href="#i-arrow"/></svg></button></div>
+      </div>
+    </section>
+
+    <!-- 6. Equipo -->
+    <section class="section section--white" id="equipo">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Equipo</p>
+          <h2>Profesionales que <em>te explican todo.</em></h2>
+        </div>
+        <div class="team-grid" id="teamGrid"></div>
+      </div>
+    </section>
+
+    <!-- 7. El consultorio -->
+    <section class="section" id="consultorio">
+      <div class="container">
+        <div class="section-head section-head--row reveal">
+          <div>
+            <p class="eyebrow">El consultorio</p>
+            <h2>Un espacio luminoso, <em>pensado para que estés tranquilo.</em></h2>
+          </div>
+          <p class="section-note">Tocá una foto para verla en grande.</p>
+        </div>
+        <div class="gallery" id="gallery"></div>
+      </div>
+    </section>
+
+    <!-- 8. Opiniones -->
+    <section class="section section--white" id="opiniones">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="tag-demo">Opiniones de ejemplo</span>
+          <p class="eyebrow">Opiniones</p>
+          <h2>Lo que dicen <em>nuestros pacientes.</em></h2>
+        </div>
+        <div class="reviews" id="reviews"></div>
+      </div>
+    </section>
+
+    <!-- 9. Obras sociales -->
+    <section class="section section--tight" id="obras">
+      <div class="container obras reveal">
+        <div>
+          <p class="eyebrow">Obras sociales y prepagas</p>
+          <h2 class="obras-title">Trabajamos con las principales.</h2>
+        </div>
+        <div class="obras-list" id="obrasList"></div>
+        <a class="link-btn" data-wa data-wa-text="Hola Lumen! Quería consultar si atienden mi obra social: " href="#">Consultanos por la tuya →</a>
+      </div>
+    </section>
+
+    <!-- 10. Preguntas frecuentes -->
+    <section class="section section--white" id="preguntas">
+      <div class="container faq-wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Preguntas frecuentes</p>
+          <h2>Lo que más <em>nos preguntan.</em></h2>
+          <p class="section-lead">¿No encontrás lo que buscás? <a class="link-btn" data-wa href="#">Escribinos por WhatsApp</a>.</p>
+        </div>
+        <div class="faq" id="faq"></div>
+      </div>
+    </section>
+
+    <!-- 11. Contacto -->
+    <section class="section" id="contacto">
+      <div class="container contact-grid">
+        <div class="contact-card reveal">
+          <p class="eyebrow">Contacto y ubicación</p>
+          <h2>Te esperamos en <em data-cfg="consultorio.ciudad"></em>.</h2>
+          <ul class="contact-list">
+            <li><svg><use href="#i-pin"/></svg><div><small>Dirección</small><span data-cfg="consultorio.direccionCompleta"></span></div></li>
+            <li><svg><use href="#i-clock"/></svg><div><small>Horarios</small><span data-cfg-list="consultorio.horariosTexto"></span></div></li>
+            <li><svg><use href="#i-wa"/></svg><div><small>WhatsApp</small><a data-wa href="#" data-cfg="consultorio.whatsappVisible"></a></div></li>
+            <li><svg><use href="#i-ig"/></svg><div><small>Instagram</small><a id="igLink" href="#" target="_blank" rel="noopener"></a></div></li>
+          </ul>
+          <div class="contact-actions">
+            <button class="btn" data-turno><svg><use href="#i-cal"/></svg>Sacar turno online</button>
+            <a class="btn btn--ghost" data-wa href="#"><svg><use href="#i-wa"/></svg>WhatsApp</a>
+          </div>
+        </div>
+        <div class="map reveal">
+          <iframe id="mapFrame" title="Mapa de Bahía Blanca" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 12. Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#inicio" class="logo logo--light" aria-label="Lumen Odontología">
+          <svg class="logo-mark"><use href="#i-tooth"/></svg>
+          <span class="logo-text"><b>LUMEN</b><small>ODONTOLOGÍA</small></span>
+        </a>
+        <p>Odontología integral con atención personalizada en <span data-cfg="consultorio.ciudad"></span>.</p>
+      </div>
+      <nav class="footer-links" aria-label="Secciones">
+        <a href="#tratamientos">Tratamientos</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#consultorio">Consultorio</a>
+        <a href="#preguntas">Preguntas</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="footer-hours">
+        <small>Horarios</small>
+        <span data-cfg-list="consultorio.horariosTexto"></span>
+        <small>Dirección</small>
+        <span data-cfg="consultorio.direccion"></span>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Lumen Odontología</span>
+      <a href="panel.html" class="footer-admin">Acceso consultorio</a>
+    </div>
+    <div class="footer-cono">Demo hecha por <a href="https://instagram.com/cono.agency" target="_blank" rel="noopener">Cono</a></div>
+  </footer>
+
+  <!-- WhatsApp flotante -->
+  <a class="wa-float" data-wa href="#" aria-label="Escribinos por WhatsApp"><svg><use href="#i-wa"/></svg></a>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto del consultorio" hidden>
+    <button class="lb-btn lb-close" data-lb="close" aria-label="Cerrar"><svg><use href="#i-close"/></svg></button>
+    <button class="lb-btn lb-prev" data-lb="prev" aria-label="Foto anterior"><svg><use href="#i-back"/></svg></button>
+    <figure class="lb-figure"><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+    <button class="lb-btn lb-next" data-lb="next" aria-label="Foto siguiente"><svg><use href="#i-next"/></svg></button>
+  </div>
+
+  <!-- Sistema de turnos -->
+  <div class="booking" id="booking" role="dialog" aria-modal="true" aria-labelledby="bkTitle" hidden>
+    <div class="booking-backdrop" data-bk="close"></div>
+    <div class="booking-panel">
+      <header class="bk-head">
+        <button class="bk-icon-btn" id="bkBack" aria-label="Atrás"><svg><use href="#i-back"/></svg><span>Atrás</span></button>
+        <div class="bk-head-title">
+          <span class="eyebrow" id="bkStepLabel">Paso 1 de 5</span>
+          <strong id="bkTitle">Sacar turno</strong>
+        </div>
+        <button class="bk-icon-btn bk-close" data-bk="close" aria-label="Cerrar"><svg><use href="#i-close"/></svg></button>
+      </header>
+      <div class="bk-progress" aria-hidden="true"><span id="bkBar"></span></div>
+      <ol class="bk-steps" id="bkSteps" aria-hidden="true"></ol>
+      <div class="bk-body" id="bkBody"></div>
+      <footer class="bk-foot" id="bkFoot"></footer>
+    </div>
+  </div>
+
+  <div class="toast-wrap" id="toasts" aria-live="polite"></div>
+
+  <script src="config.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="js/booking.js" defer></script>
+  <script src="js/site.js" defer></script>
+</body>
+</html>
