@@ -4,7 +4,7 @@ Demo website for a fictional dental clinic: services, team, FAQ and an online bo
 
 Everything runs in **demo mode** (`modoDemo: true` in `config.js`): no real WhatsApp is opened and data lives only in the browser (`localStorage`).
 
-**Live:** https://cono-agency.costanzovalentino09.workers.dev/demos/consultorio/
+**Live:** https://lumenodontologia.vercel.app/
 
 ## Stack
 Static HTML, CSS and vanilla JS. All editable content (name, hours, treatments, prices, team, FAQ) lives in `config.js`.
