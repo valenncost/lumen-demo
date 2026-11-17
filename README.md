@@ -10,4 +10,4 @@ Everything runs in **demo mode** (`modoDemo: true` in `config.js`): no real What
 Static HTML, CSS and vanilla JS. All editable content (name, hours, treatments, prices, team, FAQ) lives in `config.js`.
 
 ## Deploy
-Any static host. The live copy is served from the Cono site on Cloudflare.
+Vercel (project `lumenodontologia` → https://lumenodontologia.vercel.app), deploys on every push to `main`.
